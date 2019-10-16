@@ -1,0 +1,329 @@
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ mkdir git_tutorial
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ git init
+Initialized empty Git repository in /home/sangeeta/Desktop/phd/oct_2019_workshop/.git/
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ touch first.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ code first.cpp 
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ g++ first.cpp -o first.cpp 
+g++: fatal error: input file ‘first.cpp’ is the same as output file
+compilation terminated.
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ g++ first.cpp -o first
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ ./first 
+Hello World
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ git add .
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ git commit -a
+[master (root-commit) 98af13f] add first file
+ 78 files changed, 8603 insertions(+)
+ create mode 100644 Ken Martin, Bill Hoffman - Mastering CMake-Kitware.pdf
+ create mode 100644 ParMooN1.zip
+ create mode 100644 ParMooN1/S1.010.log
+ create mode 100644 ParMooN1/S1.010.tex
+ create mode 100644 ParMooN1/S1.aux
+ create mode 100644 ParMooN1/S1.log
+ create mode 100644 ParMooN1/S1.nav
+ create mode 100644 ParMooN1/S1.out
+ create mode 100644 ParMooN1/S1.pdf
+ create mode 100644 ParMooN1/S1.snm
+ create mode 100644 ParMooN1/S1.synctex.gz
+ create mode 100644 ParMooN1/S1.tex
+ create mode 100644 ParMooN1/S1.toc
+ create mode 100644 ParMooN1/S2.aux
+ create mode 100644 ParMooN1/S2.log
+ create mode 100644 ParMooN1/S2.nav
+ create mode 100644 ParMooN1/S2.out
+ create mode 100644 ParMooN1/S2.pdf
+ create mode 100644 ParMooN1/S2.snm
+ create mode 100644 ParMooN1/S2.synctex.gz
+ create mode 100644 ParMooN1/S2.tex
+ create mode 100644 ParMooN1/S2.toc
+ create mode 100644 ParMooN1/s1.png
+ create mode 100644 ParMooN1/s10.png
+ create mode 100644 ParMooN1/s11.png
+ create mode 100644 ParMooN1/s12.png
+ create mode 100644 ParMooN1/s13.jpg
+ create mode 100644 ParMooN1/s13.png
+ create mode 100644 ParMooN1/s14.png
+ create mode 100644 ParMooN1/s2.png
+ create mode 100644 ParMooN1/s3.png
+ create mode 100644 ParMooN1/s4.png
+ create mode 100644 ParMooN1/s5.png
+ create mode 100644 ParMooN1/s6.png
+ create mode 100644 ParMooN1/s8.png
+ create mode 100644 ParMooN1/s9.png
+ create mode 100644 ParMooN1/seHhY.png
+ create mode 100644 S1.aux
+ create mode 100644 S1.log
+ create mode 100644 S1.out
+ create mode 100644 S1.tex
+ create mode 100755 first
+ create mode 100644 first.cpp
+ create mode 100644 tutorial_session/CMakeLists.txt
+ create mode 100644 tutorial_session/build/CMakeCache.txt
+ create mode 100644 tutorial_session/build/CMakeFiles/3.5.1/CMakeCCompiler.cmake
+ create mode 100644 tutorial_session/build/CMakeFiles/3.5.1/CMakeCXXCompiler.cmake
+ create mode 100755 tutorial_session/build/CMakeFiles/3.5.1/CMakeDetermineCompilerABI_C.bin
+ create mode 100755 tutorial_session/build/CMakeFiles/3.5.1/CMakeDetermineCompilerABI_CXX.bin
+ create mode 100644 tutorial_session/build/CMakeFiles/3.5.1/CMakeSystem.cmake
+ create mode 100644 tutorial_session/build/CMakeFiles/3.5.1/CompilerIdC/CMakeCCompilerId.c
+ create mode 100755 tutorial_session/build/CMakeFiles/3.5.1/CompilerIdC/a.out
+ create mode 100644 tutorial_session/build/CMakeFiles/3.5.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+ create mode 100755 tutorial_session/build/CMakeFiles/3.5.1/CompilerIdCXX/a.out
+ create mode 100644 tutorial_session/build/CMakeFiles/CMakeDirectoryInformation.cmake
+ create mode 100644 tutorial_session/build/CMakeFiles/CMakeOutput.log
+ create mode 100644 tutorial_session/build/CMakeFiles/Makefile.cmake
+ create mode 100644 tutorial_session/build/CMakeFiles/Makefile2
+ create mode 100644 tutorial_session/build/CMakeFiles/TargetDirectories.txt
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/CXX.includecache
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/DependInfo.cmake
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/build.make
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/cmake_clean.cmake
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/depend.internal
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/depend.make
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/flags.make
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/link.txt
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/progress.make
+ create mode 100644 tutorial_session/build/CMakeFiles/Tutorial.dir/tutorial.cpp.o
+ create mode 100644 tutorial_session/build/CMakeFiles/cmake.check_cache
+ create mode 100755 tutorial_session/build/CMakeFiles/feature_tests.bin
+ create mode 100644 tutorial_session/build/CMakeFiles/feature_tests.c
+ create mode 100644 tutorial_session/build/CMakeFiles/feature_tests.cxx
+ create mode 100644 tutorial_session/build/CMakeFiles/progress.marks
+ create mode 100644 tutorial_session/build/Makefile
+ create mode 100755 tutorial_session/build/Tutorial
+ create mode 100644 tutorial_session/build/cmake_install.cmake
+ create mode 100644 tutorial_session/tutorial.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ git status
+On branch master
+nothing to commit, working directory clean
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ ls
+first  first.cpp  git_tutorial  Ken Martin, Bill Hoffman - Mastering CMake-Kitware.pdf  ParMooN1  ParMooN1.zip  S1.aux  S1.log  S1.out  S1.tex  tutorial_session
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ rm first
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ ls
+first.cpp  git_tutorial  Ken Martin, Bill Hoffman - Mastering CMake-Kitware.pdf  ParMooN1  ParMooN1.zip  S1.aux  S1.log  S1.out  S1.tex  tutorial_session
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ cd git_tutorial/
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git init
+Initialized empty Git repository in /home/sangeeta/Desktop/phd/oct_2019_workshop/git_tutorial/.git/
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ cd ..
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ scp first.cpp git_tutorial/
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop$ cd git_tutorial/
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ ls
+first.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git init
+Reinitialized existing Git repository in /home/sangeeta/Desktop/phd/oct_2019_workshop/git_tutorial/.git/
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git add .
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git commit -a -m "add first.cpp"
+[master (root-commit) 1a2c978] add first.cpp
+ 1 file changed, 12 insertions(+)
+ create mode 100644 first.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git status
+On branch master
+nothing to commit, working directory clean
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ touch second.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ code second.cpp 
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git add second.cpp 
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git commit -a
+Aborting commit due to empty commit message.
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git commit -a -m "adding second file"
+[master d516e67] adding second file
+ 1 file changed, 12 insertions(+)
+ create mode 100644 second.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ touch third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ code third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git add third.cpp 
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git add *
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff -staged
+error: invalid option: -staged
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   third.cpp
+
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff --color-words
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff first.cpp second.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git add *
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff -staged
+error: invalid option: -staged
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff-staged
+git: 'diff-staged' is not a git command. See 'git --help'.
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff --staged
+diff --git a/third.cpp b/third.cpp
+index b463e47..b00578f 100644
+--- a/third.cpp
++++ b/third.cpp
+@@ -7,6 +7,7 @@ int main(void) {
+ 
+      cout << "Hello World from  third file" << endl;
+      //adding an extra line
++     //addding second line
+ 
+      return(0);
+ 
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff a b
+fatal: ambiguous argument 'a': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git reset third.cpp
+Unstaged changes after reset:
+M       third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git commit -a -m "commiting after reset"
+[master d6aa5ae] commiting after reset
+ 1 file changed, 1 insertion(+)
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git reset d6aa5ae
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git status
+On branch master
+nothing to commit, working directory clean
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git rm second.cpp 
+rm 'second.cpp'
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ ls
+first.cpp  third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git log
+commit d6aa5ae9500792ce0ac6860e7ecb4c6587f73b94
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:23:39 2019 +0530
+
+    commiting after reset
+
+commit dfecfc478c162034dbd716ab030acc2a6b209416
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:17:57 2019 +0530
+
+    small change in third.cpp
+
+commit cd4df9f68ef3545e5786b4760a651af9eb8ad8c0
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:16:54 2019 +0530
+
+    commit third.cpp
+
+commit d516e67b3d9604b839a832f8a4ae828a6fb9d5ec
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:08:55 2019 +0530
+
+    adding second file
+
+commit 1a2c9784e26dd66f0fdc85e60a3862eb15f0c597
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:06:03 2019 +0530
+
+    add first.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git log --follow third.cpp
+commit d6aa5ae9500792ce0ac6860e7ecb4c6587f73b94
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:23:39 2019 +0530
+
+    commiting after reset
+
+commit dfecfc478c162034dbd716ab030acc2a6b209416
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:17:57 2019 +0530
+
+    small change in third.cpp
+
+commit cd4df9f68ef3545e5786b4760a651af9eb8ad8c0
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:16:54 2019 +0530
+
+    commit third.cpp
+
+commit 1a2c9784e26dd66f0fdc85e60a3862eb15f0c597
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:06:03 2019 +0530
+
+    add first.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git show dfecfc478c162034dbd716ab030acc2a6b209416
+commit dfecfc478c162034dbd716ab030acc2a6b209416
+Author: shongi <sangeetay@iisc.ac.in>
+Date:   Wed Oct 16 08:17:57 2019 +0530
+
+    small change in third.cpp
+
+diff --git a/third.cpp b/third.cpp
+index 34b0f39..b463e47 100644
+--- a/third.cpp
++++ b/third.cpp
+@@ -6,6 +6,7 @@ using namespace std;
+ int main(void) {
+ 
+      cout << "Hello World from  third file" << endl;
++     //adding an extra line
+ 
+      return(0);
+ 
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git tag dfecfc478c162034dbd716ab030acc2a6b209416
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git tag dfecfc478c162034dbd716ab030acc2a6b209416 sjdk
+fatal: Failed to resolve 'sjdk' as a valid ref.
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git branch
+* master
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git branch first_branch
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git branch
+  first_branch
+* master
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git branch second_branch
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git branch
+  first_branch
+* master
+  second_branch
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git branch -d second_branch
+Deleted branch second_branch (was d6aa5ae).
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git checkout first_branch 
+D       second.cpp
+Switched to branch 'first_branch'
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git branch
+* first_branch
+  master
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git merge first_branch 
+Already up-to-date.
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ ls
+first.cpp  third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git checkout master
+D       second.cpp
+Switched to branch 'master'
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git merge first_branch 
+Already up-to-date.
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git checkout first_branch 
+D       second.cpp
+Switched to branch 'first_branch'
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ ls
+first.cpp  third.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git add *
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git commit -a -m "checking merge command"
+[first_branch b7dd0d2] checking merge command
+ 2 files changed, 1 insertion(+), 12 deletions(-)
+ delete mode 100644 second.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git checkout master 
+Switched to branch 'master'
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git merge first_branch 
+Updating d6aa5ae..b7dd0d2
+Fast-forward
+ second.cpp | 12 ------------
+ third.cpp  |  1 +
+ 2 files changed, 1 insertion(+), 12 deletions(-)
+ delete mode 100644 second.cpp
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ git diff --staged
+sangeeta@sangeeta-H110M-H:~/Desktop/phd/oct_2019_workshop/git_tutorial$ 
